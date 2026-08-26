@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operaciones</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#eee;
+text-align:center;
+}
+
+.formulario{
+width:500px;
+margin:50px auto;
+padding:20px;
+border:3px solid #F79646;
+background:white;
+}
+
+select,input{
+padding:8px;
+margin:10px;
+border:2px solid #F79646;
+}
+
+input[type=number]{
+color:#F79646;
+font-weight:bold;
+}
+
+button{
+background:#F79646;
+border:none;
+padding:10px 25px;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#d97f2d;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="formulario">
+
+<form action="tabla.php" method="POST">
+
+<label>Operación</label>
+
+<select name="operacion">
+<option value="suma">Suma</option>
+<option value="resta">Resta</option>
+<option value="multiplicacion">Multiplicación</option>
+<option value="division">División</option>
+</select>
+
+<label>n</label>
+
+<input type="number" name="n" required>
+
+<br>
+
+<button type="submit">Generar</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
