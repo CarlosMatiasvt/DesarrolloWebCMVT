@@ -1,0 +1,117 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    border-bottom: 1px dashed black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 5px;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+}
+
+code {
+    background-color: #dddddd;
+    padding: 2px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+}
+
+.tarjeta {
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.cabecera-tarjeta {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.cuerpo-tarjeta {
+    padding: 10px;
+}
+
+.categoria {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.descuento {
+    font-size: 12px;
+    color: red;
+}
+
+.agotado {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    background-color: navy;
+    color: white;
+}
+
+.resaltado {
+    background-color: blue;
+    color: white;
+}
+
+pre {
+    background-color: black;
+    color: rgb(247, 247, 247);
+    padding: 10px;
+}
