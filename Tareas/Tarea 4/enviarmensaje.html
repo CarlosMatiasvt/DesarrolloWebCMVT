@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PLANTILLAS.css/Diseño-3.css">
+</head>
+<body id="cuerpo">
+    <h1>Mensaje</h1>
+    <p>Buenas ing espero que en esta gestion 1/2026 </p>
+    <p>sea una gestion maravillosa donde se logre todos los objetivos de aprendizaje</p>
+    <p>estoy entusiasmado por aprender desarrollo web unas de las materias que mas esperaba</p>
+    <h2>Mis redes</h2>
+    <div>
+    <table border="1">
+        <tr>
+            <td>Mi instagram</td>
+            <td><a href="https://www.instagram.com/mathiusvt/">instagram</a></td>
+        </tr>
+        <tr>
+            <td>Correo</td>
+            <td>villarroeltarragacarlosmatias2@gmail.com</td>
+        </tr>
+    </table>
+    <a href="yo.html">Volver</a>
+    </div>
+    <script>
+        console.log("Total de elementos: " + document.getElementsByTagName("*").length);
+
+        console.log("Cantidad de div: " + document.getElementsByTagName("div").length);
+
+        console.log("Cantidad de img: " + document.getElementsByTagName("img").length);
+
+        let enlace = document.getElementsByTagName("a")[0];
+        console.log("Primer enlace: " + enlace.href);
+        console.log("Texto del enlace: " + enlace.textContent);
+        console.log(document.getElementById("cuerpo").style.color);
+                  
+    
+    </script>
+
+</body>
+</html>
