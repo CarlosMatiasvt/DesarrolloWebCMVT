@@ -1,0 +1,9 @@
+.receta {
+    width: 100px;
+    height: 100px;
+}
+.grilla {
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
