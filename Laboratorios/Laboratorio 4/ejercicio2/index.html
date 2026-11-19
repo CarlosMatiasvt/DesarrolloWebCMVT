@@ -1,0 +1,42 @@
+<!-- Integrantes: Villarroel tarraga carlos matias y Gutierrez Torricos Adalid --> 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria USFX - Administracion del menu</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="cabecera">
+        <div>
+            <h1>Cafetería USFX</h1>
+            <p>Administración del menú · Ejercicio 2 (AJAX con Fetch API)</p>
+        </div>
+        <nav>
+            <button type="button" data-vista="inicio" class="activo">Inicio</button>
+            <button type="button" data-vista="menu">Menú</button>
+            <button type="button" data-vista="nuevo">Nuevo producto</button>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section id="contenido" class="panel"></section>
+    </main>
+
+    <!-- Ventana modal reutilizable (Detalle y Confirmar eliminación) -->
+    <div id="modal" class="modal">
+        <div class="modal-caja">
+            <div id="modal-titulo" class="modal-titulo"></div>
+            <div id="modal-cuerpo" class="modal-cuerpo"></div>
+            <div id="modal-pie" class="modal-pie"></div>
+        </div>
+    </div>
+
+    <footer class="pie">
+        SIS-256 · Tecnología y Desarrollo Web · Laboratorio 4
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Integrantes: Adalid Gutiérrez Torricos y Carlos Matias Villarroel Tarraga  -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería USFX - Arma tu pedido</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <script src="pedido.js" defer></script>
+</head>
+<body>
+    <header class="cabecera">
+        <div>
+            <h1>Cafetería USFX</h1>
+            <p>Arma tu pedido &middot; Ejercicio 1 (JavaScript y DOM)</p>
+        </div>
+        <div>
+            Productos en el pedido <span id="contador" class="contador">0</span>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <div class="columnas">
+            <section class="panel">
+                <h2>Menú del día</h2>
+
+                <div class="barra">
+                    <div class="campo">
+                        <label for="buscar">Buscar producto</label>
+                        <input type="search" id="buscar" placeholder="Escriba parte del nombre...">
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+                        <select id="categoria">
+                            <option value="Todas">Todas</option>
+                            <option value="Salados">Salados</option>
+                            <option value="Platos">Platos</option>
+                            <option value="Postres">Postres</option>
+                        </select>
+                    </div>
+                </div>
+
+                <p id="resumen" class="vacio">Mostrando 9 de 9 productos</p>
+                <div id="catalogo" class="grilla"></div>
+            </section>
+
+            <aside>
+                <section class="panel">
+                    <h3>Tu pedido</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th class="num">Cant.</th>
+                                <th class="num">Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="detalle">
+                            <tr>
+                                <td colspan="4" class="vacio">Aún no agregó productos.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">TOTAL</td>
+                                <td id="total" class="num">Bs 0.00</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="derecha" style="margin-top: 12px;">
+                        <button type="button" id="btn-vaciar" class="boton boton-sec mini">Vaciar pedido</button>
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <h3>Datos para la entrega</h3>
+                    <div id="mensajes-error"></div>
+
+                    <form id="form-entrega" novalidate>
+                        <div class="campo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre">
+                            <div id="error-nombre" class="error-campo"></div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" name="celular" placeholder="7XXXXXXX">
+                            <div id="error-celular" class="error-campo"></div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="entrega">Entrega</label>
+                            <select id="entrega" name="entrega">
+                                <option value="Recoger en caja">Recoger en caja</option>
+                                <option value="Llevar al aula">Llevar al aula</option>
+                            </select>
+                        </div>
+
+                        <div id="grupo-aula" class="campo oculto">
+                            <label for="aula">Aula (ej. A-12)</label>
+                            <input type="text" id="aula" name="aula">
+                            <div id="error-aula" class="error-campo"></div>
+                        </div>
+
+                        <button type="submit" class="boton boton-ok">Confirmar pedido</button>
+                    </form>
+                </section>
+
+                <div id="confirmacion"></div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="pie">
+        SIS-256 &middot; Tecnología y Desarrollo Web &middot; Laboratorio 4
+    </footer>
+</body>
+</html>
